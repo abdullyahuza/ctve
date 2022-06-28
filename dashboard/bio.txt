@@ -1,0 +1,37 @@
+<p>
+     At iCroft We believe that creativity is the backbone of anything out there, be it technology, business, or art. And that's why ours speaks for us. When you do the things you love you will never get bored in your life.
+</p>
+
+<p class="font-weight-bold">Education</p>
+
+<ul class="fa-ul">
+     <li>
+          <span class="fa-li fas fa-graduation-cap"></span>
+          <div>Phd., Common Sense, 2007</div>
+          <div class="small">University of Common Sense</div>
+     </li>
+
+     <li>
+          <span class="fa-li fas fa-graduation-cap"></span>
+          <div>MSc., Common Sense, 2004</div>
+          <div class="small">University of Common sense</div>
+     </li>
+
+     <li>
+          <span class="fa-li fas fa-graduation-cap"></span>
+          <div>BSc., Common Sense, 1999</div>
+          <div class="small">University of Common Sense</div>
+     </li>
+</ul>
+
+<p class="font-weight-bold">Interests</p>
+
+<ul>
+     <li>cybersecurity</li>
+     <li>digital forensics</li>
+     <li>botnets</li>
+     <li>computer science education</li>
+     <li>distance learning</li>
+     <li>collaborative learning</li>
+     <li>computer-assisted instruction</li>
+</ul>

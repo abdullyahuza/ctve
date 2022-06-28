@@ -1,0 +1,31 @@
+RewriteEngine on
+
+#decline if it is a folder name
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#accept if it is a html file
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+#redirect to the file
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+#accept if it is a php file
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+#redirect to the file
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+RewriteRule ^staff/([aA-zZ]+)/?$ dashboard/profile.php?s=$1 [N,NE]
+RewriteRule ^staff/([aA-zZ]+)/bio$ dashboard/bio.php?s=$1 [N,NE]
+RewriteRule ^staff/([aA-zZ]+)/cv$ dashboard/cv.php?s=$1 [N,NE]
+RewriteRule ^staff/([aA-zZ]+)/teaching$ dashboard/teaching.php?s=$1 [N,NE]
+RewriteRule ^staff/([aA-zZ]+)/schedule$ dashboard/schedule.php?s=$1 [N,NE]
+RewriteRule ^staff/([aA-zZ]+)/research$ dashboard/research.php?s=$1 [N,NE]
+RewriteRule ^staff/([aA-zZ]+)/publications$ dashboard/publications.php?s=$1 [N,NE]
+
+#RewriteRule ^staff/([aA-zZ]+)$ /dashboard/profile.php?s=$1 [N,NE]
+#RewriteRule ^staff/([^/]+)$ dashboard/profile.php?s=$1 [L,QSA]
+#RewriteRule ^staff/([a-z]+)/$ dashboard/profile.php?s=$1 [L,QSA]
+
+Options -indexes
+

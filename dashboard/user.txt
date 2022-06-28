@@ -1,0 +1,36 @@
+user {
+    coreData[
+        name, email, gsm, password, photo
+    ]
+
+    caterer{
+        [
+            bio, location(address?), services, rating, contact, paid,
+            approvePayments, Withdrawable
+        ]
+        login
+        profile
+        dashboard{ requests, accepts, balance, other notifications }
+        On accept ping to chat may be?
+        changePassword
+        UpdateProfile
+        withdraw
+        requestsHistory
+
+    }
+
+    normalUser{
+        login
+        profile
+        dashboard
+        look for caterer {
+            search by service
+            search by rating
+            search by location
+        }
+        make request
+        changePassword
+        payment
+        requestsHistory
+    }
+}

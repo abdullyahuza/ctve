@@ -1,0 +1,10 @@
+<strong>2019/2020 </strong>
+
+<ul class="small">
+    <li>Cosc211 - Introduction to Machine Learning, Teaching Fellow</li>
+    <li>Cosc211 - Introduction to Machine Learning, Teaching Assistant</li>
+    <li>Cosc211 - Introduction to Machine Learning, Technical Fellow</li>
+    <li>Cosc301 - Data Structure, Teaching Fellow</li>
+    <li>Cosc301 - Data Structure, Teaching Assistant</li>
+    <li>Cosc301 - Data Structure, Technical Fellow</li>
+</ul>
