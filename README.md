@@ -14,3 +14,4 @@
 	- Add items to wall
 	- Delete items
 - Manage files
+- Share profile link with students
