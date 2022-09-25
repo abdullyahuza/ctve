@@ -14,7 +14,7 @@
 
 
         <div class="sb-sidenav-menu-heading">Resources</div>
-        <a class="nav-link" href="Wall">
+        <a class="nav-link" href="wall">
             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
             My Wall
         </a>

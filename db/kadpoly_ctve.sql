@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 27, 2021 at 05:28 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.2.12
+-- Host: localhost
+-- Generation Time: Sep 25, 2022 at 10:05 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `kadpoly_ctve`
 --
-CREATE DATABASE IF NOT EXISTS `kadpoly_ctve` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `kadpoly_ctve`;
 
 -- --------------------------------------------------------
 
@@ -76,9 +73,8 @@ CREATE TABLE `groups` (
 --
 
 INSERT INTO `groups` (`id`, `name`, `permissions`) VALUES
-(1, 'Standard_user', ''),
-(2, 'Administrator', '{\r\n\"admin\": 1,\r\n\"moderator\": 1\r\n}'),
-(3, 'moderator', '{\r\n \"moderator\": 1\r\n}');
+(1, 'Administrator', '{\r\n\"admin\": 1,\r\n\"moderator\": 1\r\n}'),
+(2, 'staff', '{\r\n\"admin\": 0,\r\n\"moderator\": 1\r\n}');
 
 -- --------------------------------------------------------
 
@@ -288,9 +284,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `title`, `gsm`, `password`, `name`, `joined`, `group`, `role`, `img`) VALUES
-(1, 'abdullyahuza', 'yahuzaabdulrazak@abu.edu.ng', 'Dr.', '08039099210', '$2y$10$nDMFLB3W1sFpsHbtmDI1/ukx32Iiuug/h79/NiuchGSBZoDQLYp5u', 'Abdull Yahuza', '2020-10-23 18:20:08', 2, '', 'abdullyahuza.JPG'),
-(2, 'TahirJamilu', 'jamiltahir010@gmail.com', 'Mr.', '08035057227', '$2y$10$F7CAq/ag8yg99zYJ.4Wu.uwXEUKs1gygTTxQVPSLlp0D0rGwBwFZC', 'Jamilu Tahir', '2020-12-09 09:41:04', 1, 'hod', 'TahirJamilu.JPG'),
-(5, 'yahuzaaisha', 'aeesh@gmail.com', 'Mrs.', '08099999999', '$2y$10$iQ.iUbmIJ/5b5anWAhgWtu5YlRTpFczt6B3vAmR3fOtt/4TEQgydq', 'Aisha Yahuza', '2021-01-03 21:56:40', 1, '', 'yahuzaaisha.JPG');
+(1, 'abdullyahuza', 'yahuzaabdulrazak@abu.edu.ng', 'Dr.', '08039099210', '$2y$10$nDMFLB3W1sFpsHbtmDI1/ukx32Iiuug/h79/NiuchGSBZoDQLYp5u', 'Abdull Yahuza', '2020-10-23 18:20:08', 1, '', 'abdullyahuza.JPG'),
+(2, 'TahirJamilu', 'jamiltahir010@gmail.com', 'Mr.', '08035057227', '$2y$10$F7CAq/ag8yg99zYJ.4Wu.uwXEUKs1gygTTxQVPSLlp0D0rGwBwFZC', 'Jamilu Tahir', '2020-12-09 09:41:04', 2, 'hod', 'TahirJamilu.JPG'),
+(5, 'yahuzaaisha', 'aeesh@gmail.com', 'Mrs.', '08099999999', '$2y$10$YkGNVFU/IHZK6DOzMyDeoOG2mN4Vsezqqp/CYJhh02az0qVGjpZX2', 'Aisha Yahuza', '2021-01-03 21:56:40', 2, '', 'yahuzaaisha.JPG');
 
 -- --------------------------------------------------------
 
@@ -498,7 +494,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users_session`
 --
 ALTER TABLE `users_session`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `wall`

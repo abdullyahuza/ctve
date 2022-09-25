@@ -91,12 +91,12 @@
 
             if ($group->count()) {
                 $permissions = json_decode($group->first()->permissions, true);
-                
+
                 if ($permissions[$key] == true) {
                     return true;
                 }
             }
-            return false; 
+            return false;
         }
 
         public function exists() {
