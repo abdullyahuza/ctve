@@ -21,7 +21,7 @@
             <ul class="flex-column ml-md-auto mt-3 nav">
 
                 <li class="nav-item">
-                    <a class="nav-link p-0" href="/ctve1/staff/<?php echo escape($data->username); ?>/bio">Bio</a>
+                    <a class="nav-link p-0" href="./staff/<?php echo escape($data->username); ?>/bio">Bio</a>
                 </li>
 
 

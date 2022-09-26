@@ -37,14 +37,11 @@ if (Input::exists()) {
                     'password' => Hash::make_hash(Input::get('new_password'))
                 ));
                 echo "<div class='alert alert-success' role='alert' id='alert'>";
-                echo "Vision &amp; Mission Updated Successfully.";
+                echo "Password Changed successfully.";
                 echo "<button type='button' class='close'>";
                 echo "<span aria-hidden='true'>&times;</span>";
                 echo "</button>";
                 echo "</div>";
-                echo "<script>window.location = 'index.php';</script>";
-                Session::flash('home', 'Your password has been Changed successfully');
-
             }else{
                 echo "Your current password is wrong.";
             }
