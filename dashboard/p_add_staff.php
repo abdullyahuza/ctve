@@ -60,7 +60,7 @@ if (Input::exists()) {
                     'password' => Hash::make_hash(Input::get('PhoneNo')),
                     'name' => $name,
                     'joined' => date('Y-m-d H:i:s'),
-                    'group' => 1,
+                    'group' => 2,
                     'role' => Input::get('SelectRole')
                 ));
                 mkdir("../staff/".$uname);
@@ -75,7 +75,7 @@ if (Input::exists()) {
                 </div>
                 <?php
             } catch (Exception $e) {
-                die($e.getMessage());
+                die($e->getMessage());
             }
 
         } else {

@@ -15,7 +15,7 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 #redirect to the file
 RewriteRule ^(.*)$ $1.php [NC,L]
 
-RewriteRule ^staff/([aA-zZ]+)/?$ staff/profile.php?s=$1 [N,NE]
+RewriteRule ^staff/([aA-zZ]+)/?$ staff/profile.php?s=$1 [L,QSA]
 RewriteRule ^staff/([aA-zZ]+)/bio$ staff/bio.php?s=$1 [N,NE]
 RewriteRule ^staff/([aA-zZ]+)/cv$ staff/cv.php?s=$1 [N,NE]
 RewriteRule ^staff/([aA-zZ]+)/teaching$ staff/teaching.php?s=$1 [N,NE]

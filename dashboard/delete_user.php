@@ -1,6 +1,6 @@
 <?php
 include '../dbh.php';
-include 'functions/func.php';
+include '../core/functions/func.php';
 
 if(isset($_POST['id'])) {
     $table = $_POST['table'];
@@ -13,8 +13,8 @@ if(isset($_POST['id'])) {
     if(file_exists("../staff/".$username)){
         deleteDir("../staff/".$username);
 
-        if (file_exists("../staff/pimg/".$username.".jpg")) {
-            unlink("../staff/pimg/".$username.".jpg");
+        if (file_exists("../staff/pimg/".$username.".JPG")) {
+            unlink("../staff/pimg/".$username.".JPG");
         }
     }
 
