@@ -1,5 +1,5 @@
 <?php include 'includes/pages/header.php'; ?>
-<?php require_once 'core/init.php'; ?>
+<?php require_once '../core/init.php'; ?>
 <?php
 $user = new User();
 if (!$user->isLoggedIn()) {
