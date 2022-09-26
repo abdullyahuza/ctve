@@ -1,5 +1,5 @@
 <?php include 'dbh.php'; ?>
-<?php include 'dashboard/classes/Redirect.php'; ?>
+<?php include 'core/classes/Redirect.php'; ?>
 
 
 <?php

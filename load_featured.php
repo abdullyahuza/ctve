@@ -1,6 +1,6 @@
 <?php include 'dbh.php'; ?>
 
-<?php include 'dashboard/functions/func.php'; ?>
+<?php include 'core/functions/func.php'; ?>
 
 
 <?php

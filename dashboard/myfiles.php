@@ -1,6 +1,6 @@
 <?php include 'includes/pages/header.php'; ?>
 <?php require_once '../core/init.php'; ?>
-<?php include 'functions/func.php'; ?>
+<?php include '../core/functions/func.php'; ?>
 <?php
 
 $user = new User();
