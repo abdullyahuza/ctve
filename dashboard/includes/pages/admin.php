@@ -28,9 +28,9 @@
                 </a>
                 <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="login">Hods</a>
-                        <a class="nav-link" href="register">Staffs</a>
-                        <a class="nav-link" href="uploadimage">Examination</a>
+                        <a class="nav-link" href="hods">Hods</a>
+                        <a class="nav-link" href="staffs">Staffs</a>
+                        <a class="nav-link" href="Examination">Examination</a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
