@@ -11,7 +11,7 @@ class DB {
         try {
             $this->_pdo = new PDO('mysql:host=' .Config::get('mysql/host'). ';dbname=' .Config::get('mysql/db'), Config::get('mysql/username'), Config::get('mysql/password'));
         } catch(PDOException $e) {
-            die($e.getMessage());
+            die("Connection failed: ".$e->getMessage());
         }
     }
 
@@ -59,9 +59,16 @@ class DB {
                  }
              }
         }
-    }
+        else{
+            $sql = "{$action} FROM {$table}";
 
-    public function get($table, $where) {
+            if ($this->query($sql)) {
+                return $this;
+            }
+        }
+    }
+    
+    public function get($table, $where = array()) {
         return $this->action('SELECT *', $table, $where);
     }
 
