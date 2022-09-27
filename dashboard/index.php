@@ -13,7 +13,7 @@ if ($user->isloggedIn()) {
             <div class="container-fluid">
                 <h6 class="mt-4">Dashboard
                     <span class="float-right">
-                        <a href="../staff/<?php echo escape($user->data()->username); ?>/" target="blank">
+                        <a href="../s/<?php echo escape($user->data()->username); ?>" target="blank">
                             <?php echo escape($user->data()->name); ?>
                         </a>
                 </span>

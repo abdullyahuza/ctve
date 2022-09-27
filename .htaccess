@@ -15,13 +15,13 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 #redirect to the file
 RewriteRule ^(.*)$ $1.php [NC,L]
 
-RewriteRule ^staff/([aA-zZ]+)/?$ staff/profile.php?s=$1 [L,QSA]
-RewriteRule ^staff/([aA-zZ]+)/bio$ staff/bio.php?s=$1 [N,NE]
-RewriteRule ^staff/([aA-zZ]+)/cv$ staff/cv.php?s=$1 [N,NE]
-RewriteRule ^staff/([aA-zZ]+)/teaching$ staff/teaching.php?s=$1 [N,NE]
-RewriteRule ^staff/([aA-zZ]+)/schedule$ staff/schedule.php?s=$1 [N,NE]
-RewriteRule ^staff/([aA-zZ]+)/research$ staff/research.php?s=$1 [N,NE]
-RewriteRule ^staff/([aA-zZ]+)/publications$ staff/publications.php?s=$1 [N,NE]
+RewriteRule ^s/([aA-zZ]+)(/?|)$ staff/profile.php?s=$1 [NC,QSA]
+RewriteRule ^s/([aA-zZ]+)/bio$ staff/bio.php?s=$1 [N,NE]
+RewriteRule ^s/([aA-zZ]+)/cv$ staff/cv.php?s=$1 [N,NE]
+RewriteRule ^s/([aA-zZ]+)/teaching$ staff/teaching.php?s=$1 [N,NE]
+RewriteRule ^s/([aA-zZ]+)/schedule$ staff/schedule.php?s=$1 [N,NE]
+RewriteRule ^s/([aA-zZ]+)/research$ staff/research.php?s=$1 [N,NE]
+RewriteRule ^s/([aA-zZ]+)/publications$ staff/publications.php?s=$1 [N,NE]
 
 #RewriteRule ^staff/([aA-zZ]+)$ /staff/profile.php?s=$1 [N,NE]
 #RewriteRule ^staff/([^/]+)$ staff/profile.php?s=$1 [L,QSA]

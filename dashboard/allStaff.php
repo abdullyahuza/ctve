@@ -49,7 +49,7 @@ if ($user->isloggedIn()) {
                                         <tr>
                                             <td>
                                                 <small>
-                                                    <a href="../staff/<?php echo $row['username']; ?>/" target="blank">
+                                                    <a href="../s/<?php echo $row['username']; ?>" target="blank">
                                                         <?php echo $row['name']; ?>
                                                     </a>
                                                 </small>

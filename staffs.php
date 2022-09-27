@@ -58,7 +58,7 @@
                             <!-- Meta Info -->
                             <div class="teachers-info mt-30">
                                 <h5><?php echo $row['name']; ?></h5>
-                                <span><a style="color: green;" href="staff/<?php echo $row['username']; ?>/">home page</a></span>
+                                <span><a style="color: green;" href="s/<?php echo $row['username']; ?>/">home page</a></span>
                             </div>
                         </div>
                     </div>

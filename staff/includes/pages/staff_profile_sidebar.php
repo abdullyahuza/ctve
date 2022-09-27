@@ -1,8 +1,8 @@
 <aside class="col-md-5">
     <h2 class="mb-1 text-muted">Home page of <?php echo escape($sData->title); ?></h2>
-    <h1 class="mb-1"><a href="../<?php echo escape($data->username); ?>/"><?php echo escape($sData->firstName)." ".escape($sData->middleName)." ".escape($sData->lastName); ?></a></h1>
+    <h1 class="mb-1"><a href="../<?php echo escape($data->username); ?>"><?php echo escape($sData->firstName)." ".escape($sData->middleName)." ".escape($sData->lastName); ?></a></h1>
     <h2 class="mb-1 pl-md-5"><?php echo escape($sData->field); ?></h2>
-    <h2 class="mb-1 pl-md-5"><a href="../../departments">Department</a> of <?php echo escape($sData->department); ?></h2>
+    <h2 class="mb-1 pl-md-5"><a href="../departments">Department</a> of <?php echo escape($sData->department); ?></h2>
     <h3 class="mb-4"><a href="https://www.kadunapoly.edu.ng/">University of Common Sense</a></h3>
     <h3 class="mb-0"><a href="mailto:<?php echo escape($sData->email); ?>"><?php echo escape($sData->email); ?></a></h3>
     <p class="mb-0">
@@ -34,11 +34,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link p-0" href="../<?php echo escape($data->username); ?>/schedule">Schedule</a>
+                    <a class="nav-link p-0" href="#">Schedule</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link p-0" href="../<?php echo escape($data->username); ?>/research">Research</a>
+                    <a class="nav-link p-0" href="#">Research</a>
                 </li>
 
                 <li class="nav-item">
