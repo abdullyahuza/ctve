@@ -2,6 +2,7 @@
 require_once '../core/init.php';
 
 $user = new User();
+$msg = '';
 if ($user->isloggedIn()) {
     Session::flash('home','Welcome Back '.ucfirst(Input::get('username')));
     Redirect::to('../dashboard/');
@@ -44,9 +45,7 @@ else {
                     }
 
                 } else {
-
-                    echo "<br><p style='text-align:center; font-weight: bold; font-family: cursive; color:#fff;'>Login failed...!, please try again.</p>";
-
+                    $msg = "<p class='alert alert-danger'>Incorrect Username / Password</p>";
                 }
 
             } else {
@@ -84,6 +83,7 @@ else {
                                     <div class="card shadow-lg border-0 rounded-lg mt-5">
                                         <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                         <div class="card-body">
+                                            <?php echo $msg; ?>
                                             <form method="post" action="">
                                                 <div class="form-group">
                                                     <label class="small mb-1" for="inputEmailUsername">Email</label>
