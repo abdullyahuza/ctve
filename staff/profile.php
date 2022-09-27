@@ -43,7 +43,7 @@ if (!$username) {
             <div class="row">
               <aside class="col-md-5">
                   <h2 class="mb-1 text-muted">Home page of <?php echo escape($sData->title); ?></h2>
-                  <h1 class="mb-1"><a href="../s/<?php echo escape($data->username); ?>"><?php echo escape($sData->firstName)." ".escape($sData->middleName)." ".escape($sData->lastName); ?></a></h1>
+                  <h1 class="mb-1"><a href="<?php echo $path ?>s/<?php echo escape($data->username); ?>"><?php echo escape($sData->firstName)." ".escape($sData->middleName)." ".escape($sData->lastName); ?></a></h1>
                   <h2 class="mb-1 pl-md-5"><?php echo escape($sData->field); ?></h2>
                   <h2 class="mb-1 pl-md-5"><a href="<?php echo $path ?>departments">Department</a> of <?php echo escape($sData->department); ?></h2>
                   <h3 class="mb-4"><a href="https://www.kadunapoly.edu.ng/">University of Common Sense</a></h3>
