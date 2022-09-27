@@ -86,7 +86,7 @@ else {
                                             <?php echo $msg; ?>
                                             <form method="post" action="">
                                                 <div class="form-group">
-                                                    <label class="small mb-1" for="inputEmailUsername">Email</label>
+                                                    <label class="small mb-1" for="inputEmailUsername">Username</label>
                                                     <input class="form-control py-4" name="username" id="username" autocomplete="off" type="text" placeholder="Enter your Username" required="true" />
                                                 </div>
                                                 <div class="form-group">
