@@ -10,6 +10,7 @@ if (!$username) {
     if (!$user->exists()) {
         Redirect::to('../error/');
     } else {
+        $projectDirName = explode('/', $_SERVER['REQUEST_URI'])[1];
         $data = $user->data();
         $sData = DB::getInstance()->get('staff_details',array('user_id', '=', $data->id))->first();
         // echo $sData->firstName;
