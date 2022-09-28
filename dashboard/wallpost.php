@@ -40,8 +40,8 @@ if ($user->isloggedIn()) {
 
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class="small mb-1" for="inputLink">File link</label>
-                                                        <input class="form-control py-3" name="Link" id="Link" type="text" placeholder="Enter link" required="true" />
+                                                        <label class="small mb-1" for="inputLink">File name</label>
+                                                        <input class="form-control py-3" name="Link" id="Link" type="text" placeholder="Enter name" required="true" />
                                                     </div>
                                                 </div>
 

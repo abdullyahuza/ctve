@@ -95,9 +95,23 @@ if (!$username) {
 
                 <main class="col-md-7">
                     <p>
-                        <a href="<?php echo $path ?>staff/pimg/<?php echo $data->img; ?>">
-                            <img src="<?php echo $path ?>staff/pimg/<?php echo $data->img; ?>" alt="<?php echo escape($sData->firstName)." ".escape($sData->lastName); ?>" class="rounded-sm">
-                        </a>
+                    <?php 
+                    if($data->img != ''){
+                    ?>
+                      <a href="<?php echo $path ?>staff/pimg/<?php echo $data->img; ?>">
+                          <img src="<?php echo $path ?>staff/pimg/<?php echo $data->img; ?>" alt="<?php echo escape($sData->firstName)." ".escape($sData->lastName); ?>" class="rounded-sm">
+                      </a>
+                    <?php
+                    }
+                    else
+                    {
+                    ?>
+                      <a href="<?php echo $path ?>staff/pimg/cat.JPG">
+                          <img src="<?php echo $path ?>staff/pimg/cat.JPG" class="rounded-sm">
+                      </a>
+                    <?php
+                    }
+                    ?>
                     </p>
                     <br>
                     <h2 style="text-align: center;">My Timeline</h2>

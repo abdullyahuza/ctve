@@ -17,7 +17,7 @@ if ($user->isloggedIn()) {
               <div class="card mb-4">
                   <div class="card-header">
                       <i class="fas fa-table mr-1"></i>
-                      Wall DataTable
+                      My Wall
                       <a href="wallpost" class="btn-success btn-sm float-right">Add</a>
                   </div>
                   <div class="card-body" id="featured_table">
