@@ -2,30 +2,36 @@
 
 if (empty($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["HTTP_X_REQUESTED_WITH"] != "XMLHttpRequest") {
     if (realpath($_SERVER["SCRIPT_FILENAME"]) == __FILE__) {
-        header("Location: ../error/");
+        header("Location: ../../error/");
         // Redirect::to('404');
         exit;
         # code...
     }
 }
-
-$name = $_FILES["download"]["name"];
+$uname = $_POST['Name'];
+$name = $_FILES["image"]["name"];
 $ext = strtolower(substr($name, strpos($name, ".") + 1));
-$size = $_FILES["download"]["size"];
-$maxsize = 100000000;
-$allowed_ext = array('pdf','csv','htm','ppt','docx');
+$size = $_FILES["image"]["size"];
+$maxsize = 10000000;
+$allowed_ext = array('jpg','png','jpeg');
 // var_dump($_SERVER['REQUEST_METHOD']);
 
 if (isset($name)) {
 
-    if (!empty($_FILES["download"]["name"])) {
+    if (!empty($_FILES["image"]["name"])) {
         if (in_array($ext, $allowed_ext)) {
 
-            $location = "../downloads/";
-            $tmp_name = $_FILES["download"]["tmp_name"];
+            $location = "../../staff/pimg/";
+            $rename = $uname.'.'.'JPG';
+
+            $tmp_name = $_FILES["image"]["tmp_name"];
 
 
-            if (move_uploaded_file($tmp_name,$location.$name)) {
+            if (move_uploaded_file($tmp_name,$location.$rename)) {
+                include '../../dbh.php';
+                $sql = "UPDATE users SET img = '$rename' WHERE username = '$uname'";
+                mysqli_query($conn,$sql);
+                mysqli_close($conn);
             ?>
             <div class="alert alert-success" role="alert" id="alert">
               Uploaded Successfully.

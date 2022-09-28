@@ -22,7 +22,9 @@ $table = $_POST['table'];
         echo "Record Deleted";
     }
 
-}else{
+}
+else{
+    $dir = $_POST['dir'];
     $file = $_POST['filename'];
     if(file_exists("../".$file)){
         unlink("../".$file);

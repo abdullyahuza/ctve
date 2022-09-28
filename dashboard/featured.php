@@ -21,7 +21,7 @@ if ($user->isloggedIn()) {
 
                                         </ul>
                                         <br>
-                                        <form method="post" action="p_add_featured.php" id="CreateFeatured">
+                                        <form method="post" action="./process/p_add_featured.php" id="CreateFeatured">
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">

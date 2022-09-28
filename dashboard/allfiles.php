@@ -36,10 +36,13 @@ if ($user->isloggedIn()) {
 
                                 <tbody>
                                   <?php
-                                  $files = scandir('../downloads/',1);
-                                  $dir = 'downloads/';
+                                  $downloads = scandir('../downloads/',1);
+                                  $results = scandir('../results/', 1);
 
-                                  foreach ($files as $file) {
+                                  $download_dir = 'downloads/';
+                                  $results_dir = 'results/';
+
+                                  foreach ($downloads as $file) {
                                     if (!is_dir("../downloads/$file")) {
                                     ?>
                                       <tr>
@@ -51,7 +54,29 @@ if ($user->isloggedIn()) {
 
                                         <td>
                                             <center>
-                                                <a id="<?php echo $dir.$file;  ?>" class="btn btn-danger btn-sm delete" href="javascript:void(0)">Delete</a>
+                                                <a id="<?php echo $download_dir.$file;  ?>" class="btn btn-danger btn-sm delete" href="javascript:void(0)">Delete</a>
+                                            </center>
+                                        </td>
+
+
+                                      </tr>
+                                  <?php
+                                    }
+                                  }
+
+                                  foreach ($results as $file) {
+                                    if (!is_dir("../results/$file")) {
+                                    ?>
+                                      <tr>
+                                        <td>
+                                          <small>
+                                          <a href="../results/<?php echo $file; ?>" target="blank"><?php echo $file; ?></a>
+                                          </small>
+                                      </td>
+
+                                        <td>
+                                            <center>
+                                                <a id="<?php echo $results_dir.$file;  ?>" class="btn btn-danger btn-sm delete" href="javascript:void(0)">Delete</a>
                                             </center>
                                         </td>
 

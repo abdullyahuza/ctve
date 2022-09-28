@@ -1,9 +1,8 @@
 <?php
-require_once '../core/init.php';
-
+require_once '../../core/init.php';
 if (empty($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["HTTP_X_REQUESTED_WITH"] != "XMLHttpRequest") {
     if (realpath($_SERVER["SCRIPT_FILENAME"]) == __FILE__) {
-        header("Location: ../error/");
+        header("Location: ../../error/");
         // Redirect::to('404');
         exit;
         # code...
@@ -15,7 +14,7 @@ if (Input::exists()) {
     $validate = new Validate();
 
     $validation = $validate->check($_POST, array(
-        'Philosophy' => array(
+        'Happening' => array(
             'required' => true,
             'min' => 30,
             'max' => 1000
@@ -26,13 +25,13 @@ if (Input::exists()) {
     if ($validation->passed()) {
 
         try {
-            $conn = DB::getInstance()->update('pwv',1,array(
-                'body' => Input::get('Philosophy')
+            $conn = DB::getInstance()->update('happening',1,array(
+                'body' => Input::get('Happening')
             ));
 
             ?>
             <div class="alert alert-success" role="alert" id="alert">
-              Philosophy Updated Successfully.
+              Happening Updated Successfully.
               <button type="button" class="close">
                   <span aria-hidden="true">&times;</span>
               </button>

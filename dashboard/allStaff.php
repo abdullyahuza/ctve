@@ -20,7 +20,7 @@ if ($user->isloggedIn()) {
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-table mr-1"></i>
-                        Staff DataTable
+                        All Staffs
                         <a href="add_staff" class="btn-success btn-sm float-right">Add</a>
                     </div>
                     <div class="card-body">

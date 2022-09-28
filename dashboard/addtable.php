@@ -21,7 +21,7 @@ if ($user->isloggedIn()) {
 
                                         </ul>
                                         <br>
-                                        <form method="POST" action="p_addtable.php" id="Table">
+                                        <form method="POST" action="./process/p_addtable.php" id="Table">
                                             <div class="form-row-">
                                                 <div class="col-md-12">
                                                     <div class="form-group">

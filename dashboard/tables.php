@@ -65,7 +65,7 @@ if ($user->isloggedIn()) {
                 $('#UploadTable').submit(function(event){
                     event.preventDefault();
                     $.ajax({
-                        url: 'p_table.php',
+                        url: './process/p_table.php',
                         method: 'POST',
                         data: new FormData(this),
                         contentType: false,

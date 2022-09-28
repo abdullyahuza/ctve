@@ -25,7 +25,7 @@ $row = mysqli_fetch_assoc($result);
 
                                         </ul>
                                         <br>
-                                        <form method="post" action="p_news_events.php" id="Update">
+                                        <form method="post" action="./process/p_news_events.php" id="Update">
                                             <div class="form-row-">
                                                 <div class="col-md-12">
                                                     <div class="form-group">

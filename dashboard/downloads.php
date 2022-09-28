@@ -66,7 +66,7 @@ if ($user->isloggedIn()) {
                 $('#UploadDownload').submit(function(event){
                     event.preventDefault();
                     $.ajax({
-                        url: 'p_download.php',
+                        url: './process/p_download.php',
                         method: 'POST',
                         data: new FormData(this),
                         contentType: false,

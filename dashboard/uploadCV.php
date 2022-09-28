@@ -63,7 +63,7 @@ if ($user->isloggedIn()) {
                 $('#UploadCV').submit(function(event){
                     event.preventDefault();
                     $.ajax({
-                        url: 'p_cv.php',
+                        url: './process/p_cv.php',
                         method: 'POST',
                         data: new FormData(this),
                         contentType: false,

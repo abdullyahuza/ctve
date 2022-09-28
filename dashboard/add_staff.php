@@ -21,7 +21,7 @@ if ($user->isloggedIn()) {
 
                                         </ul>
                                         <br>
-                                        <form method="post" action="p_add_staff.php" id="CreateStaff">
+                                        <form method="post" action="./process/p_add_staff.php" id="CreateStaff">
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">

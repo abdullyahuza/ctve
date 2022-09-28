@@ -21,7 +21,7 @@ if ($user->isloggedIn()) {
 
                                         </ul>
                                         <br>
-                                        <form method="POST" action="p_adddownload.php" id="Download">
+                                        <form method="POST" action="./process/p_adddownload.php" id="Download">
                                             <div class="form-row-">
                                                 <div class="col-md-12">
                                                     <div class="form-group">

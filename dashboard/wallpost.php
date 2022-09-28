@@ -22,7 +22,7 @@ if ($user->isloggedIn()) {
 
                                         </ul>
                                         <br>
-                                        <form method="post" action="p_add_wallpost.php" id="CreateWallPost">
+                                        <form method="post" action="./process/p_add_wallpost.php" id="CreateWallPost">
                                             <div class="form-row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">

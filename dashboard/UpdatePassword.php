@@ -19,7 +19,7 @@ if (!$user->isLoggedIn()) {
                             </div>
 
                             <div class="card-body">
-                                <form method="post" action="p_updatepassword.php" id="UpdatePassword">
+                                <form method="post" action="./process/p_updatepassword.php" id="UpdatePassword">
                                 <ul id="msg" class="msg"></ul>
                                 <br>
                                     <div class="form-row">

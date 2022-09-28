@@ -65,7 +65,7 @@ if ($user->isloggedIn()) {
                 $('#UploadResult').submit(function(event){
                     event.preventDefault();
                     $.ajax({
-                        url: 'p_result.php',
+                        url: './process/p_result.php',
                         method: 'POST',
                         data: new FormData(this),
                         contentType: false,

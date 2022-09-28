@@ -25,7 +25,7 @@ $row = mysqli_fetch_assoc($result);
 
                                         </ul>
                                         <br>
-                                        <form method="post" enctype="multipart/form-data" action="p_quicklinks.php" id="Update">
+                                        <form method="post" enctype="multipart/form-data" action="./process/p_quicklinks.php" id="Update">
                                             <div class="form-row-">
                                                 <div class="col-md-12">
                                                     <div class="form-group">

@@ -17,7 +17,7 @@
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-success">
-            <a class="navbar-brand" href="index">CTVE Kadpoly</a>
+            <a class="navbar-brand" href="./">CTVE Kadpoly</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">

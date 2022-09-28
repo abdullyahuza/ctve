@@ -94,7 +94,10 @@ $updateUser = array(
 	'gsm' => "08122727777",
 	'role' => "hod"
 );
-$db->update('users','25',$updateUser)
+$db->update('users','25',$updateUser);
+$new_user_id = $db->get('users', array('username','=','abdullyahuza'))->first();
+
+print_r($new_user_id->id);
 
 
 ?>	

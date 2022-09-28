@@ -23,7 +23,7 @@ if ($user->isloggedIn()) {
 
                                         </ul>
                                         <br>
-                                        <form method="post" action="p_uprofile.php" id="UpdateProfile">
+                                        <form method="post" action="./process/p_uprofile.php" id="UpdateProfile">
                                             <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">

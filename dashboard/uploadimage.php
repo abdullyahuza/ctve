@@ -62,7 +62,7 @@ if ($user->isloggedIn()) {
                 $('#UploadImage').submit(function(event){
                     event.preventDefault();
                     $.ajax({
-                        url: 'p_image.php',
+                        url: './process/p_image.php',
                         method: 'POST',
                         data: new FormData(this),
                         contentType: false,

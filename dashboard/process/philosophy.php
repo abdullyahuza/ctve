@@ -1,5 +1,5 @@
 <?php include 'includes/pages/header.php'; ?>
-<?php require_once '../core/init.php'; ?>
+<?php require_once '../../core/init.php'; ?>
 <?php require_once '../dbh.php'; ?>
 <?php
 
@@ -25,7 +25,7 @@ $row = mysqli_fetch_assoc($result);
 
                                         </ul>
                                         <br>
-                                        <form method="post" action="p_philosophy.php" id="Update">
+                                        <form method="post" action="./process/p_philosophy.php" id="Update">
                                             <div class="form-row-">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
