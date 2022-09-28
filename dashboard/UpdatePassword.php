@@ -13,29 +13,29 @@ if (!$user->isLoggedIn()) {
         <main>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <div class="card shadow-lg border-0 rounded-lg mt-5">
-                            <div class="card-header"><h3 class="text-center font-weight-light my-4">Change ya Password</h3>
+                            <div class="card-header"><h3 class="text-center font-weight-light my-4">Change Your Password</h3>
                             </div>
 
                             <div class="card-body">
                                 <form method="post" action="./process/p_updatepassword.php" id="UpdatePassword">
-                                <ul id="msg" class="msg"></ul>
-                                <br>
+                                    <ul id="msg" class="msg"></ul>
+                                    <br>
                                     <div class="form-row">
-                                        <div class="col-md-8">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="small mb-1" for="current_password">Current Password</label>
                                                 <input class="form-control py-3" type="password" name="current_password" id="current_password" />
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="small mb-1" for="new_password">New Password</label>
                                                 <input class="form-control py-3" name="new_password" id="new_password" type="password" />
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="small mb-1" for="comfirm_password">Comfirm Password</label>
                                                 <input class="form-control py-3" name="comfirm_password" id="comfirm_password" type="password" />
@@ -43,8 +43,8 @@ if (!$user->isLoggedIn()) {
                                         </div>
                                     </div>
 
-                                    <div class="form-group mt-4 mb-0">
-                                        <input type="submit" class="btn btn-success float-right" value="Update" />
+                                    <div class="form-group mt-2 mb-0 text-center">
+                                        <input type="submit" class="btn btn-success" value="Update Password" />
                                     </div>
                                 </form>
                             </div>
