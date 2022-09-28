@@ -21,7 +21,7 @@ if (isset($name)) {
     if (!empty($_FILES["download"]["name"])) {
         if (in_array($ext, $allowed_ext)) {
 
-            $location = "../downloads/";
+            $location = "../../downloads/";
             $tmp_name = $_FILES["download"]["tmp_name"];
 
 

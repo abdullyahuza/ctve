@@ -103,6 +103,13 @@ if ($user->isloggedIn()) {
                     if ($iFile != false) {
                         $countImages = count($iFile);
                     }
+                    //Results
+                    $dirResults = "../results/";
+                    $rFile = glob($dirResults."*");
+                    $countResults = 0;
+                    if ($rFile != false) {
+                        $countResults = count($rFile);
+                    }
                 ?>
                 <div class="row">
                     <div class="col-xl-3 col-md-6">
@@ -167,7 +174,7 @@ if ($user->isloggedIn()) {
 
                     <div class="col-xl-3 col-md-6">
                         <div class="card bg-success text-white mb-4">
-                            <div class="card-body"><b>All Files</b><span class="float-right"><h5>(<?php print_r($countDownloads); ?>)</h5></span></div>
+                            <div class="card-body"><b>All Files</b><span class="float-right"><h5>(<?php print_r($countDownloads+$countResults); ?>)</h5></span></div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
                                 <a class="small text-white stretched-link" href="allfiles">View Details</a>
                                 <div class="small text-white"><i class="fas fa-angle-right"></i></div>

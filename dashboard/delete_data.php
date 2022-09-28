@@ -24,7 +24,6 @@ $table = $_POST['table'];
 
 }
 else{
-    $dir = $_POST['dir'];
     $file = $_POST['filename'];
     if(file_exists("../".$file)){
         unlink("../".$file);
