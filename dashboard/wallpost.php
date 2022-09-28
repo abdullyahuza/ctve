@@ -59,7 +59,7 @@ if ($user->isloggedIn()) {
                                     </div>
                                     <div class="card-footer text-center">
                                         <div class="small"><b>Note:</b> This form will add a post to your wall.</div>
-                                        <div class="small"><b>Note:</b> Take note of the file name and extension. file link: staff/username/files/fileName.extension</div>
+                                        <div class="small"><b>Note:</b> Take note of the file name and extension. file name: fileName.extension</div>
                                     </div>
                                 </div>
                             </div>

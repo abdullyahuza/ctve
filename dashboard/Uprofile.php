@@ -130,7 +130,7 @@ if ($user->isloggedIn()) {
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
-            alert('Please contact the site administrator to update your profile if you are not familir with some HTML Knowledge.');
+            alert('Please contact the site administrator to update your profile if you are not familir with some HTML.');
 
 
                 $('#UpdateProfile').submit(function(event){

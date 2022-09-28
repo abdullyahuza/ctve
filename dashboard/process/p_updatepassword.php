@@ -44,9 +44,9 @@ if (Input::exists()) {
                 echo "Your current password is wrong.";
             }
         } else {
-            // foreach ($validation->errors() as $error) {
-            //     echo $error."<br>";
-            // }
+            /*foreach ($validation->errors() as $error) {
+                echo $error."<br>";
+            }*/
             for ($i=0; $i < count($validation->errors()) ; $i++) {
                 if ($validation->errors()[$i] == 'current_password is required') {
                     # code...
@@ -63,6 +63,11 @@ if (Input::exists()) {
                 if ($validation->errors()[$i] == 'new_password must match comfirm_password') {
                     # code.
                     echo "<li>New and Comfirm must match</li>";
+                }
+                if ($validation->errors()[$i] == 'new_password must be a minimum of 6 characters'
+                    || $validation->errors()[$i] == 'confirm_password must be a minimum of 6 characters') {
+                    # code.
+                    echo "<li>Password must be a minimum of 6 characters</li>";
                 }
             }
         }

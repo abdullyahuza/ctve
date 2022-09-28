@@ -43,7 +43,7 @@ if (Input::exists()) {
 
     } else {
         foreach ($validation->errors() as $error) {
-                        echo "<li>".$error, "</li>";
+            echo "<li>".$error, "</li>";
         }
     }
 
