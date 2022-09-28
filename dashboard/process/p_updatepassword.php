@@ -29,9 +29,7 @@ if (Input::exists()) {
         ));
 
         if ($validation->passed()) {
-            // if (!Hash::un_hash(Input::get('current_password'),$user->data()->password)) {
-            //     echo "Your current password is wrong.";
-            // }
+        
             if(Hash::un_hash(Input::get('current_password'),$user->data()->password)) {
                 $user->update(array(
                     'password' => Hash::make_hash(Input::get('new_password'))
