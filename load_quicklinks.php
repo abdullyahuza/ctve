@@ -1,5 +1,4 @@
-<?php include 'dbh.php'; ?>
-<?php include 'core/classes/Redirect.php'; ?>
+<?php include 'core/init.php'; ?>
 
 
 <?php
@@ -12,9 +11,9 @@
         }
     }
 
-    $sql = "SELECT body FROM quicklinks WHERE id=1";
-    $result = mysqli_query($conn,$sql);
-    $row = mysqli_fetch_assoc($result);
-    echo $row['body'];
-    mysqli_close($conn);
+    $db = DB::getInstance();
+
+    $quicklinks = $db->get('quicklinks', array('id','=',1))->first();
+
+    echo $quicklinks->body;
  ?>

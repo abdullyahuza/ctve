@@ -1,5 +1,4 @@
-<?php include 'dbh.php'; ?>
-<?php include 'core/classes/Redirect.php'; ?>
+<?php include 'core/init.php'; ?>
 
 
 <?php
@@ -12,9 +11,8 @@
         }
     }
 
-    $sql = "SELECT body FROM pwv WHERE id=3";
-    $result = mysqli_query($conn,$sql);
-    $row = mysqli_fetch_assoc($result);
-    echo $row['body'];
-    mysqli_close($conn);
+    $db = DB::getInstance();
+    $vm = $db->get('pwv', array('id','=',3))->first();
+
+    echo $vm->body;
  ?>
