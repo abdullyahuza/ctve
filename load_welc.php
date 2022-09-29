@@ -1,6 +1,4 @@
-<?php include 'dbh.php'; ?>
-<?php include 'core/classes/Redirect.php'; ?>
-
+<?php include 'core/init.php'; ?>
 
 <?php
     if (empty($_SERVER["HTTP_X_REQUESTED_WITH"]) && $_SERVER["HTTP_X_REQUESTED_WITH"] != "XMLHttpRequest") {
@@ -12,9 +10,9 @@
         }
     }
 
-    $sql = "SELECT body FROM pwv WHERE id=2";
-    $result = mysqli_query($conn,$sql);
-    $row = mysqli_fetch_assoc($result);
-    echo $row['body'];
-    mysqli_close($conn);
+    $db = DB::getInstance();
+    $welcome = $db->query('SELECT body FROM pwv WHERE id=2')->first();
+
+    echo $welcome->body;
+
  ?>

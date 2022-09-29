@@ -1,5 +1,4 @@
-<?php include 'dbh.php'; ?>
-<?php include 'core/classes/Redirect.php'; ?>
+<?php include 'core/init.php'; ?>
 
 
 <?php
@@ -11,10 +10,7 @@
             # code...
         }
     }
-
-    $sql = "SELECT body FROM pwv WHERE id=1";
-    $result = mysqli_query($conn,$sql);
-    $row = mysqli_fetch_assoc($result);
-    echo $row['body'];
-    mysqli_close($conn);
+    $db = DB::getInstance();
+    $philo = $db->get('pwv',array('id','=',1))->first();
+    echo $philo->body;
  ?>
