@@ -1,3 +1,7 @@
+<?php 
+$wholeUrl = "http://".$_SERVER['HTTP_HOST']."".$_SERVER['REQUEST_URI']."";
+$link = substr($wholeUrl, strrpos($wholeUrl, '/')+1);
+?>
 <aside class="col-md-5">
     <h2 class="mb-1 text-muted">Home page of <?php echo escape($sData->title); ?></h2>
     <h1 class="mb-1"><a href="../<?php echo escape($data->username); ?>"><?php echo escape($sData->firstName)." ".escape($sData->middleName)." ".escape($sData->lastName); ?></a></h1>
@@ -21,16 +25,16 @@
             <ul class="flex-column ml-md-auto mt-3 nav">
 
                 <li class="nav-item">
-                    <a class="nav-link p-0" href="../<?php echo escape($data->username); ?>/bio">Bio</a>
+                    <a class="<?php if($link == 'bio') echo 'active';?> nav-link p-0" href="../<?php echo escape($data->username); ?>/bio">Bio</a>
                 </li>
 
 
                 <li class="nav-item">
-                    <a class="nav-link p-0" href="../<?php echo escape($data->username); ?>/cv">CV</a>
+                    <a class="<?php if($link == 'cv') echo 'active';?> nav-link p-0" href="../<?php echo escape($data->username); ?>/cv">CV</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link p-0" href="../<?php echo escape($data->username); ?>/teaching">Teaching</a>
+                    <a class="<?php if($link == 'teaching') echo 'active';?> nav-link p-0" href="../<?php echo escape($data->username); ?>/teaching">Teaching</a>
                 </li>
 
                 <li class="nav-item">
@@ -42,7 +46,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link p-0" href="../<?php echo escape($data->username); ?>/publications">Publications</a>
+                    <a class="<?php if($link == 'publications') echo 'active';?> nav-link p-0" href="../<?php echo escape($data->username); ?>/publications">Publications</a>
                 </li>
 
             </ul>

@@ -25,7 +25,7 @@ if (!$username) {
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Favicon -->
-      <link rel="icon" href="../favicon.ico">
+      <link rel="icon" href="../img/core-img/favicon.ico">
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700&display=swap" rel="stylesheet">
       <link href="<?php echo $path; ?>staff/styles.css" rel="stylesheet">
       <link href="<?php echo $path; ?>staff/all.css" rel="stylesheet">
