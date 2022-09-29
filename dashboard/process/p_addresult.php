@@ -16,7 +16,7 @@ if (Input::exists()) {
     $validation = $validate->check($_POST, array(
         'AddResult' => array(
             'required' => true,
-            'min' => 15,
+            'min' => 5,
             'max' => 500
         ),
         'Title' => array(
@@ -62,8 +62,8 @@ if (Input::exists()) {
                 # code.
                 echo "<li>link is required</li>";
             }
-            if($validation->errors()[$i] == 'AddResult must be a minimum of 15 characters'){
-                echo "<li>link must be a minimum of 15 characters</li>";
+            if($validation->errors()[$i] == 'AddResult must be a minimum of 5 characters'){
+                echo "<li>link must be a minimum of 5 characters</li>";
             }
             if($validation->errors()[$i] == 'Title must be a minimum of 5 characters'){
                 echo "<li>Title must be a minimum of 5 characters</li>";

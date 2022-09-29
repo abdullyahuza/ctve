@@ -51,7 +51,9 @@
                                     $resultl = mysqli_query($conn,$last);
 
                                     $lastr = mysqli_fetch_array($resultl);
-                                    $last = $lastr['id'];
+                                    if($lastr){
+                                        $last = $lastr['id'];
+                                    }
 
                                     if ($row = mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_assoc($result)) {

@@ -26,11 +26,11 @@ if ($user->isloggedIn()) {
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label class="small mb-1" for="inputTitle">Title</label>
-                                                        <input type="text" class="form-control py-3" name="Title" id="Title" />
+                                                        <input type="text" class="form-control py-3" name="Title" id="Title" placeholder="Title" />
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="small mb-1" for="inputLink">Link</label>
-                                                        <input type="text" class="form-control py-3" name="AddResult" id="AddResult" />
+                                                        <input type="text" class="form-control py-3" name="AddResult" id="AddResult" placeholder="filename" />
                                                     </div>
                                                     <div class="form-group">
                                                         <input type="submit" class="btn btn-success" name="UpdateResult" id="UpdateResult" value="Update Results" />
