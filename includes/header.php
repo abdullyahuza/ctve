@@ -8,7 +8,7 @@
                     <div class="col-12 h-100">
                         <div class="header-content h-100 d-flex align-items-center justify-content-between">
                             <div class="ctve-logo">
-                                <a href="/ctve1"><img src="img/core-img/logo1.png" height="50" width="200" alt=""></a>
+                                <a href="./"><img src="img/core-img/logo1.png" height="50" width="200" alt=""></a>
                             </div>
                             <div class="login-content">
                                 <a href="#">College of Technical & Vocational Education</a>
@@ -42,7 +42,7 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="/ctve1">Home</a></li>
+                                    <li><a href="./">Home</a></li>
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
                                             <li><a href="departments">Departments</a></li>

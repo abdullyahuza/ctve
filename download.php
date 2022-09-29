@@ -52,7 +52,9 @@
                                     $resultl = mysqli_query($conn,$last);
 
                                     $lastd = mysqli_fetch_array($resultl);
-                                    $last = $lastd['id'];
+                                    if($lastd > 0){
+                                        $last = $lastd['id'];
+                                    }
 
                                     if ($row = mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_assoc($result)) {
