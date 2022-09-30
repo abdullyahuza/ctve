@@ -40,7 +40,6 @@ if ($user->isloggedIn()) {
                                     </div>
                                     <div class="card-footer text-center">
                                         <div class="small"><b>Note:</b> This form will upload a file.</div>
-                                        <div class="small"><b>Note:</b> Take note of the file name and extension. file link: results/fileName.extension</div>
                                         <div class="small"><b>Note:</b> Click Add Download to manage downloads in downloads page.</div>
                                     </div>
                                 </div>
