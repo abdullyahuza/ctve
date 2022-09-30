@@ -21,7 +21,7 @@ if (Input::exists()) {
         ),
         'Download' => array(
             'required' => true,
-            'min' => 15,
+            'min' => 5,
             'max' => 500
         )
     ));
@@ -48,9 +48,9 @@ if (Input::exists()) {
         }
 
     } else {
-        // foreach ($validation->errors() as $error) {
-        //                 echo "<li>".$error, " link</li>";
-        // }
+        /*foreach ($validation->errors() as $error) {
+                        echo "<li>".$error, " link</li>";
+        }*/
         for ($i=0; $i < count($validation->errors()) ; $i++) {
 
             if ($validation->errors()[$i] == 'Title is required') {
@@ -60,6 +60,14 @@ if (Input::exists()) {
             if ($validation->errors()[$i] == 'Download is required') {
                 # code.
                 echo "<li>link is required</li>";
+            }
+            if ($validation->errors()[$i] == 'Title must be a minimum of 5 characters') {
+                # code.
+                echo "<li>Title must be a minimum of 5 characters</li>";
+            }
+            if ($validation->errors()[$i] == 'Download must be a minimum of 15 characters') {
+                # code.
+                echo "<li>Filename must be a minimum of 15 characters</li>";
             }
         }
     }

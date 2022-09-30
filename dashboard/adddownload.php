@@ -29,7 +29,7 @@ if ($user->isloggedIn()) {
                                                         <input type="text" class="form-control py-3" name="Title" id="Title" />
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="small mb-1" for="inputLink">Link</label>
+                                                        <label class="small mb-1" for="inputLink">Filename</label>
                                                         <input type="text" class="form-control py-3" name="Download" id="Download" />
                                                     </div>
                                                     <div class="form-group">

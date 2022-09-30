@@ -61,7 +61,7 @@
                                             if ($row['id'] == $last) {
                                             ?>
                                             <div class="post-meta">
-                                                <li><a class="blink" href="<?php echo $row['link']; ?>"><?php echo $row['title']; ?></a></li>
+                                                <li><a class="blink" href="./downloads/<?php echo $row['link']; ?>"><?php echo $row['title']; ?></a></li>
                                             </div>
                                             <?php
                                             }
@@ -69,7 +69,7 @@
                                             {
                                             ?>
                                             <div class="post-meta">
-                                                <li><a href="<?php echo $row['link']; ?>"><?php echo $row['title']; ?></a></li>
+                                                <li><a href="./downloads/<?php echo $row['link']; ?>"><?php echo $row['title']; ?></a></li>
                                             </div>
                                             <?php
                                             }
